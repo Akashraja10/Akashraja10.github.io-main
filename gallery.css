@@ -1,0 +1,243 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Featured bars */
+nav {
+    display: flex;
+    /* padding: 2% 10px; */
+
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.772)), url(images/bg\ image.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav img {
+    width: 120px;
+    height: 120px;
+
+}
+
+.nav-links {
+    flex: auto;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.nav-links ul li {
+
+    display: inline-block;
+    padding: 25px 12px;
+
+
+}
+
+.nav-links ul li a {
+    color: rgba(255, 255, 255, 0.783);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Image container of the image slider */
+
+section h2 {
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: #f44336;
+}
+
+.slide img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.height {
+    height: 10px;
+}
+
+/* Image-container design */
+.image-container {
+
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.next {
+    right: 0;
+}
+
+/* Next and previous icon design */
+.previous,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    margin-top: -25px;
+}
+
+.fa {
+    font-size: 30px;
+}
+
+.fa:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+    color: white;
+}
+
+.bottomdot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 6px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+
+}
+
+.active,
+.bottomdot:hover {
+    background-color: black;
+}
+
+/*Footer*/
+
+.row {
+
+    display: flex;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.632), rgba(4, 9, 30, 0.772)), url(images/bg\ image.jpg);
+    background-position: center;
+    width: 100%;
+}
+
+.footer-col {
+    margin-left: 10px;
+    width: 50%;
+
+}
+
+.footer-col h3 {
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: #f44336;
+    text-decoration: underline;
+
+}
+
+.footer-col ul {
+    display: auto;
+
+}
+
+.footer-col ul li {
+    display: inline-block;
+}
+
+
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.783);
+    text-transform: capitalize;
+    padding: 15px;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+    color: #f44336;
+    padding-left: 8px;
+}
+
+.footer-col2 {
+
+    color: rgba(255, 255, 255, 0.783);
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.footer-col2 p {
+    font-weight: 200;
+}
+
+.footer-col2 .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 0, 0, 0.363);
+    margin: 0 18px 18px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col2 .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.footer-col2 p2 {
+    color: #f44336;
+}
+
+
+/* .footer-col2 .fafa-heart-o {
+    color: #f44336;
+} */
+
+/* responsive */
+@media only screen and (max-width:1024px) {
+
+    /* For tablets: */
+    * {
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+    }
+
+    .nav-links ul li a {
+        font-size: medium;
+    }
+
+    .footer-col ul {
+        flex-wrap: wrap;
+    }
+
+    .footer-col2 p {
+        margin-top: 40px;
+
+    }
+}
